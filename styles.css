@@ -135,7 +135,7 @@ main {
 }
 
 #welcome-section .icons {
-  font-size: 2.2em;
+  font-size: 2.5em;
   grid-row: 4 / 5;
   width: 6em;
   margin: .2em 0;
@@ -204,7 +204,7 @@ a {
 #welcome-section #hand {
   position: absolute;
   left: calc(50% - 16px);
-  bottom: 2%;
+  bottom: 6%;
   animation: jumping 400ms ease-in-out alternate infinite;
 }
 
@@ -472,13 +472,7 @@ address {
   }
 }
 
-@media (width < 1255px) {
-  #welcome-section {
-    font-size: 15px;
-  }
-}
-
-@media (width < 1025px) {
+@media (width < 1055px) {
   .hero {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -501,9 +495,18 @@ address {
   #navbar ul {
     grid-column: 2 / 3;
   }
+
+  #welcome-section {
+    font-size: 15px;
+  }
 }
 
-@media (width < 895px) {
+@media (width < 925px) {
+  .hero {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  
   #projects .projects-grid {
     grid-template-columns: auto;
   }
@@ -540,11 +543,15 @@ address {
 
 @media (width < 630px) {
   #welcome-section {
-    font-size: 8.5px;
+    font-size: 12px;
+  }
+
+  #welcome-section .icons {
+    font-size: 4em;
   }
 
   #welcome-section img {
-    max-height: 200px;
+    max-height: 250px;
   }
 
   #contact .button-div {
@@ -557,8 +564,12 @@ address {
   }
 }
 
-@media (width < 420px) {
+@media (width < 480px) {
   #welcome-section {
-    font-size: 7px;
+    font-size: 8px;
+  }
+
+  #welcome-section img {
+    max-height: 200px;
   }
 }
